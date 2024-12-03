@@ -1,0 +1,10 @@
+^C:\USERS\DE509865\DOCUMENTS\TESTPROJECTS\BUILD\CMAKEFILES\A552972E6183D0782EEA01C26397D92A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/de509865/Documents/TestProjects -BC:/Users/de509865/Documents/TestProjects/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/de509865/Documents/TestProjects/build/MonitorChanges.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
